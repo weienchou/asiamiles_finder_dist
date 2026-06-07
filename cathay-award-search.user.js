@@ -1,28 +1,29 @@
 // ==UserScript==
-// @name         Cathay Award Search
-// @name:zh-TW   國泰里程票搜尋工具
-// @namespace    https://wayne.tw
-// @version      1.0.8
-// @author       Wayne
-// @description  國泰里程獎勵機票批次查詢：餘位矩陣 heatmap、展開航班明細、排序/篩選、收藏、結果快取。
-// @license      GPL
-// @include      http://localhost:*/*
-// @include      https://localhost:*/*
-// @include      http://127.0.0.1:*/*
-// @match        https://*.cathaypacific.com/cx/*/book-a-trip/redeem-flights/redeem-flight-awards.html*
-// @match        https://*.cathaypacific.com/cx/*/book-a-trip/redeem-flights/facade.html*
-// @match        https://api.cathaypacific.com/redibe/IBEFacade*
-// @match        https://book.cathaypacific.com/*
-// @match        https://asiamiles-finder.pages.dev/*
-// @match        https://asiamiles-finder.wuts.cc/*
-// @match        http://localhost:*/*
-// @connect      cathaypacific.com
-// @grant        GM_getValue
-// @grant        GM_log
-// @grant        GM_setValue
-// @grant        GM_xmlhttpRequest
-// @grant        unsafeWindow
-// @run-at       document-idle
+// @name               Cathay Award Search
+// @name:zh-TW         國泰里程票搜尋工具
+// @namespace          https://wayne.tw
+// @version            1.0.9
+// @author             Wayne
+// @description        Batch-search Cathay / Asia Miles award availability: seat-matrix heatmap, expandable flight details, sort/filter, favourites, and result caching.
+// @description:zh-TW  國泰里程獎勵機票批次查詢：餘位矩陣 heatmap、展開航班明細、排序／篩選、收藏、結果快取。
+// @license            GPL
+// @include            http://localhost:*/*
+// @include            https://localhost:*/*
+// @include            http://127.0.0.1:*/*
+// @match              https://*.cathaypacific.com/cx/*/book-a-trip/redeem-flights/redeem-flight-awards.html*
+// @match              https://*.cathaypacific.com/cx/*/book-a-trip/redeem-flights/facade.html*
+// @match              https://api.cathaypacific.com/redibe/IBEFacade*
+// @match              https://book.cathaypacific.com/*
+// @match              https://asiamiles-finder.pages.dev/*
+// @match              https://asiamiles-finder.wuts.cc/*
+// @match              http://localhost:*/*
+// @connect            cathaypacific.com
+// @grant              GM_getValue
+// @grant              GM_log
+// @grant              GM_setValue
+// @grant              GM_xmlhttpRequest
+// @grant              unsafeWindow
+// @run-at             document-idle
 // ==/UserScript==
 
 (function() {
@@ -1583,7 +1584,7 @@
 	(function() {
 		"use strict";
 		const debug = false;
-		const APP_VERSION = "v1.0.8";
+		const APP_VERSION = "v1.0.9";
 		const advanced = true;
 		function announceToApp() {
 			try {
