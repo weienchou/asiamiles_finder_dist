@@ -2,7 +2,7 @@
 // @name         Cathay Award Search
 // @name:zh-TW   國泰里程票搜尋工具
 // @namespace    https://wayne.tw
-// @version      1.0.7
+// @version      1.0.8
 // @author       Wayne
 // @description  國泰里程獎勵機票批次查詢：餘位矩陣 heatmap、展開航班明細、排序/篩選、收藏、結果快取。
 // @license      GPL
@@ -1583,7 +1583,7 @@
 	(function() {
 		"use strict";
 		const debug = false;
-		const APP_VERSION = "v1.0.7";
+		const APP_VERSION = "v1.0.8";
 		const advanced = true;
 		function announceToApp() {
 			try {
